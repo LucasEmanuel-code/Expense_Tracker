@@ -1,0 +1,14 @@
+C:\Users\sandr\OneDrive\Área de Trabalho\Lucas\CsharpProJects\ExpenseTrackerCLI\obj\Debug\net8.0\ExpenseTrackerCLI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sandr\OneDrive\Área de Trabalho\Lucas\CsharpProJects\ExpenseTrackerCLI\obj\Debug\net8.0\ExpenseTrackerCLI.AssemblyInfoInputs.cache
+C:\Users\sandr\OneDrive\Área de Trabalho\Lucas\CsharpProJects\ExpenseTrackerCLI\obj\Debug\net8.0\ExpenseTrackerCLI.AssemblyInfo.cs
+C:\Users\sandr\OneDrive\Área de Trabalho\Lucas\CsharpProJects\ExpenseTrackerCLI\obj\Debug\net8.0\ExpenseTrackerCLI.csproj.CoreCompileInputs.cache
+C:\Users\sandr\OneDrive\Área de Trabalho\Lucas\CsharpProJects\ExpenseTrackerCLI\bin\Debug\net8.0\ExpenseTrackerCLI.exe
+C:\Users\sandr\OneDrive\Área de Trabalho\Lucas\CsharpProJects\ExpenseTrackerCLI\bin\Debug\net8.0\ExpenseTrackerCLI.deps.json
+C:\Users\sandr\OneDrive\Área de Trabalho\Lucas\CsharpProJects\ExpenseTrackerCLI\bin\Debug\net8.0\ExpenseTrackerCLI.runtimeconfig.json
+C:\Users\sandr\OneDrive\Área de Trabalho\Lucas\CsharpProJects\ExpenseTrackerCLI\bin\Debug\net8.0\ExpenseTrackerCLI.dll
+C:\Users\sandr\OneDrive\Área de Trabalho\Lucas\CsharpProJects\ExpenseTrackerCLI\bin\Debug\net8.0\ExpenseTrackerCLI.pdb
+C:\Users\sandr\OneDrive\Área de Trabalho\Lucas\CsharpProJects\ExpenseTrackerCLI\obj\Debug\net8.0\ExpenseTrackerCLI.dll
+C:\Users\sandr\OneDrive\Área de Trabalho\Lucas\CsharpProJects\ExpenseTrackerCLI\obj\Debug\net8.0\refint\ExpenseTrackerCLI.dll
+C:\Users\sandr\OneDrive\Área de Trabalho\Lucas\CsharpProJects\ExpenseTrackerCLI\obj\Debug\net8.0\ExpenseTrackerCLI.pdb
+C:\Users\sandr\OneDrive\Área de Trabalho\Lucas\CsharpProJects\ExpenseTrackerCLI\obj\Debug\net8.0\ExpenseTrackerCLI.genruntimeconfig.cache
+C:\Users\sandr\OneDrive\Área de Trabalho\Lucas\CsharpProJects\ExpenseTrackerCLI\obj\Debug\net8.0\ref\ExpenseTrackerCLI.dll

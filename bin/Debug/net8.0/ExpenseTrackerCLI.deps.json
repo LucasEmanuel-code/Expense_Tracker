@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ExpenseTrackerCLI/1.0.0": {
+        "runtime": {
+          "ExpenseTrackerCLI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ExpenseTrackerCLI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

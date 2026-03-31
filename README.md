@@ -1,5 +1,7 @@
 # 💸 Expense Tracker CLI
 
+Projeto GitHub User Activity feito em C#: Exemplo de solução para o desafio [expense-tracker](https://roadmap.sh/projects/expense-tracker) do [roadmap.sh](https://roadmap.sh).
+
 Um rastreador de despesas simples desenvolvido em **C# (.NET)** com interface de linha de comando (CLI).
 Permite gerenciar despesas de forma rápida diretamente pelo terminal.
 

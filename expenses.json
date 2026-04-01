@@ -1,14 +1,16 @@
 [
   {
     "Id": 1,
-    "Description": "Dinner",
-    "Amount": 200,
-    "Date": "2026-03-30T22:01:25.2721563-03:00"
+    "Description": "Teste",
+    "Amount": 500,
+    "Date": "2026-03-31T19:53:23.4772699-03:00",
+    "Category": "Food"
   },
   {
     "Id": 2,
-    "Description": "Shopping",
+    "Description": "Teste",
     "Amount": 600,
-    "Date": "2026-03-30T22:02:46.1405855-03:00"
+    "Date": "2026-03-31T19:53:38.6219088-03:00",
+    "Category": "Eletronico"
   }
 ]

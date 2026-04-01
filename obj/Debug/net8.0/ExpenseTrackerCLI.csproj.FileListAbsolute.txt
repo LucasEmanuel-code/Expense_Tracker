@@ -12,3 +12,4 @@ C:\Users\sandr\OneDrive\Área de Trabalho\Lucas\CsharpProJects\ExpenseTrackerCLI
 C:\Users\sandr\OneDrive\Área de Trabalho\Lucas\CsharpProJects\ExpenseTrackerCLI\obj\Debug\net8.0\ExpenseTrackerCLI.pdb
 C:\Users\sandr\OneDrive\Área de Trabalho\Lucas\CsharpProJects\ExpenseTrackerCLI\obj\Debug\net8.0\ExpenseTrackerCLI.genruntimeconfig.cache
 C:\Users\sandr\OneDrive\Área de Trabalho\Lucas\CsharpProJects\ExpenseTrackerCLI\obj\Debug\net8.0\ref\ExpenseTrackerCLI.dll
+C:\Users\sandr\OneDrive\Área de Trabalho\Lucas\CsharpProJects\ExpenseTrackerCLI\obj\Debug\net8.0\ExpenseTrackerCLI.sourcelink.json

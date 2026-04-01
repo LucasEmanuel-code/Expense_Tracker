@@ -24,7 +24,7 @@ class Program
                 break;
 
             case "list":
-                ViewExpenses(service);
+                ViewExpenses(service, args);
                 break;
 
             case "summary":
@@ -38,17 +38,62 @@ class Program
             case "update":
                 UpdateExpense(service, args);
                 break;
-
+            case "budget":
+                SetBudget(service, args);
+                break;
+            case "export":
+                ExportExpenses(service, args);
+                break;
             default:
                 Console.WriteLine("Unknown command.");
                 break;
         }
     }
 
+    static void ExportExpenses(ExpenseService service, string[] args)
+    {
+        string fileName = "exported_expenses.csv";
+
+        for(int i = 0; i < args.Length; i++)
+        {
+            if (args[i] == "--file" && i + 1 < args.Length)
+            {
+                fileName = args[i + 1];
+                break;
+            }
+        }
+        
+        service.ExportToCSV(fileName);
+    }
+
+    static void SetBudget(ExpenseService service, string[] args)
+    {
+        int month = 0;
+        decimal limit = 0;
+
+        for (int i = 0; i < args.Length; i++)
+        {
+            if (args[i] == "--month" && i + 1 < args.Length)
+                month = int.Parse(args[i + 1]);
+
+            else if (args[i] == "--limit" && i + 1 < args.Length)
+            {
+                decimal.TryParse(args[i + 1],
+                    NumberStyles.Any,
+                    CultureInfo.InvariantCulture,
+                    out limit);
+            }
+        }
+
+        service.SetBudget(month, limit);
+        Console.WriteLine($"Budget set for month {month}: R${limit}");
+    }
+
     static void AddExpense(ExpenseService service, string[] args)
     {
         string description = "";
         decimal amount = 0;
+        string category = "";
 
         for (int i = 0; i < args.Length; i++)
         {
@@ -67,15 +112,26 @@ class Program
                     return;
                 }
             }
+            else if (args[i] == "--category" && i + 1 < args.Length)
+            {
+                category = args[i + 1];
+            }
+
         }
 
-        service.AddExpense(description, amount);
+        service.AddExpense(description, amount, category);
         Console.WriteLine("Expense added successfully!");
     }
 
-    static void ViewExpenses(ExpenseService service)
+    static void ViewExpenses(ExpenseService service, string[] args)
     {
         var list = service.GetExpenses();
+
+        if (args.Contains("--category"))
+        {
+            string category = args[Array.IndexOf(args, "--category") + 1];
+            list = service.GetExpensesByCategory(category);
+        }
 
         if (!list.Any())
         {
@@ -83,11 +139,11 @@ class Program
             return;
         }
 
-        Console.WriteLine("ID   Date       Description        Amount");
+        Console.WriteLine("ID   Date       Description        Category       Amount");
 
         foreach (var e in list)
         {
-            Console.WriteLine($"{e.Id,-5} {e.Date:yyyy-MM-dd} {e.Description,-15} R${e.Amount}");
+            Console.WriteLine($"{e.Id,-4} {e.Date:yyyy-MM-dd} {e.Description,-18} {e.Category,-13} R${e.Amount}");
         }
     }
 
@@ -123,6 +179,7 @@ class Program
         int id = 0;
         string description = "";
         decimal amount = 0;
+        string category = "";
 
         for (int i = 0; i < args.Length; i++)
         {
@@ -139,9 +196,13 @@ class Program
                     CultureInfo.InvariantCulture,
                     out amount);
             }
+            else if (args[i] == "--category" && i + 1 < args.Length)
+            {
+                category = args[i + 1];
+            }
         }
 
-        if (service.UpdateExpense(id, description, amount))
+        if (service.UpdateExpense(id, description, amount, category))
             Console.WriteLine("Expense updated successfully.");
         else
             Console.WriteLine("Expense not found.");
